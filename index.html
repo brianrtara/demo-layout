@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+    padding:0;
+    margin:0;
+    font-family: "oswald";
+}
+.header{
+    width: 100%;
+    height: 300px;
+    background: url(header.jpg);
+    background-size: cover;
+}
+.navigasi{
+    width: 100%;
+    background: orange;
+    border: 1px solid black;
+    background-image: linear-gradient(-90deg,navy, orange);
+    
+}
+.navigasi:hover{
+    background-image: linear-gradient(orange,navy);
+    transition: 1s;
+}
+.navigasi ul{
+    float: right;
+}
+.navigasi li{
+  
+    display: inline-block;
+}
+.navigasi li a{
+ color:orange;
+ text-decoration: none;
+ border:1px solid black;
+ margin: 0 10px; 
+ padding: 10px;
+ text-transform: uppercase;
+ background: #2c3e50;
+ font-family: "Oswald";
+ transition: 1s;
+ text-shadow: 1px 1px 2px hotpink, 0 0 25px white, 0 0 5px yellowgreen;
+}
+.navigasi li a:hover{
+    background:orange;
+    color:navy;
+    border-radius: 15px 50px;
+    
+
+}
+.main-content-wrapper{
+    width: 100%;
+    margin-top: 20px;
+
+}
+.content{
+    width: 65%;
+    float: left;
+    padding: 10px 5px 10px 15px;
+}
+.sidebar{
+    width: 29%;
+    float: left;
+    margin-left: 15px;
+}
+.sidebar-posts{
+    width: 100%;
+    border: 1px solid black;   
+    border-radius: 10px;
+    box-shadow: 0 10px 10px orange;
+}
+.sidebar-posts ul{
+    padding: 0 20px;
+    list-style: none;
+}
+.sidebar-posts li h2{
+    margin: 0;
+    font-size: 16pt;
+
+}
+.sidebar-posts li h2 a{
+    color: black;
+    text-decoration: none;
+}
+.sidebar-posts li p{
+    margin: 0;
+    font-size: 13pt;
+}
+.sidebar-posts li{
+    border-bottom: 1px solid orange;
+    margin-bottom: 10px;
+}
+.sidebar-posts-title{
+    padding: 0 20px;
+}
+.posts{
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.posts-image{
+    height: 500px;
+    overflow: hidden;
+}
+.posts-image img{
+    max-width: 100%;
+}
+.posts-title{
+    margin-left: 20px;
+}
+.content-title{
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.posts-short-detail{
+    padding:0 20px;
+}
+.post-misc{
+    padding: 0 20px;
+}
+.post-misc span{
+    padding: 5px 10px;
+    background: orange;
+}
+.footer{
+    width: 100%;
+    border-top: 5px solid navy;
+    text-align: center;
+    background: orange;
+}
+</style>
+    <title>layout pertama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">SMK PUSDIKHUBAD
+    </header>
+ <nav class="navigasi">
+     <a href="#" class="logo"><img src=""></a>
+     <ul>
+         <li><a href="">home</a></li>
+         <li><a href="">about</a></li>
+         <li><a href="">portfolio</a></li>
+          </ul>
+     <div style="clear:both;"></div>
+ </nav>
+ <div class="main-content-wrapper">
+ <section class="content">
+         <h2 class="content-title">QORYGORE</h2>
+            <div class="posts">
+                <div class="posts-image">
+                     <img src="header.jpg" alt="header">
+                 </div>
+                <div class="posts-detail">
+                    <h2 class="posts-title">mengenai kehutan-hutanan</h2>
+                    <p  class="posts-short-detail">Ipsum velit sint proident adipisicing dolor reprehenderit ipsum velit deserunt proident cupidatat pariatur. Reprehenderit ipsum amet commodo ut <br>ipsum sunt velit. Tempor nisi pariatur nulla proident tempor. Laboris id exercitation officia Lorem ut consequat nulla nulla. Elit mollit ullamco ea occaecat.</p>
+                    <p class="post-misc">
+                        <span>Category hutan</span>
+                        <span>posted at: 16 sept 2018</span>
+                    </p>
+                </div>
+            </div>
+            <div class="posts">
+                    <div class="posts-image">
+                         <img src="header.jpg" alt="header">
+                     </div>
+                    <div class="posts-detail">
+                        <h2 class="posts-title">mengenai kehutan-hutanan</h2>
+                        <p class="posts-short-detail">Enim ea ut aliquip ad nostrud et voluptate. Esse nostrud dolore velit excepteur labore est occaecat nisi voluptate officia do. Est reprehenderit ea occaecat incididunt. Dolor excepteur commodo sint consequat dolore. Cillum qui ullamco nisi voluptate ipsum anim qui culpa fuunt cupidatat anim qui do ipsum. Incididunt consectetur proident culpa sit labore ullamco esse voluptate pariatur excepteur commodo. Velit excepteur excepteur ullamco labore non sint irure officia. Incididunt sit mollit incididunt esse officia ex elit id sit laboris aliqua nulla ex.</p>
+                        
+                        
+                        <p class="post-misc">
+                        <span>Category hutan</span>
+                        <span>posted at: 16 sept 2018</span>
+                    </p>
+                    </div>
+
+            </div>
+ </section>
+     <aside class="sidebar">
+         <div class="sidebar-posts">
+             <h2 class="sidebar-posts-title">postingan terbaru</h2>
+             <ul>
+                 <li>
+                     <h2><a href=" ">intermediate class laravel 1</a></h2>
+                     <p>16 sept 2018</p>
+                 </li>
+                 <li>
+                        <h2><a href="">hello code batch 2</a></h2>
+                        <p>16 sept 2018</p>
+                    </li>
+                    <li>
+                            <h2><a href="">hello code batch 3</a></h2>
+                            <p>16 sept 2018</p>
+                        </li>
+             </ul>
+         </div>
+     </aside>
+     <div style="clear: both"></div>
+ </div>
+ <footer class="footer">
+     <p>&copy:Rezha Dwi Briantara</p>
+ </footer>
+</body>
+</html>
